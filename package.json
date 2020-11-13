@@ -13,7 +13,8 @@
         "start": "http-server dist",
         "st": "node ./src/index.js",
         "rm": "rimraf ./aaa",
-        "eslint": "eslint ./src --fix"
+        "eslint": "eslint ./src --fix",
+        "commitmsg": "validate-commit-msg"
     },
     "repository": {
         "type": "git",
@@ -102,11 +103,6 @@
         "last 2 versions",
         "not dead"
     ],
-    "husky": {
-        "hooks": {
-            "commitmsg": "validate-commit-msg"
-        }
-    },
     "config": {
         "validate-commit-msg": {
             "scope": {

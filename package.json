@@ -14,7 +14,7 @@
         "st": "node ./src/index.js",
         "rm": "rimraf ./aaa",
         "eslint": "eslint ./src --fix",
-        "commitmsg": "validate-commit-msg"
+        "commit": "cz"
     },
     "repository": {
         "type": "git",
@@ -97,10 +97,5 @@
         "react-dom": "^16.13.1",
         "react-router-dom": "^5.2.0",
         "react-validation-code": "^1.0.8"
-    },
-    "browserslist": [
-        "> 0.2%",
-        "last 2 versions",
-        "not dead"
-    ]
+    }
 }

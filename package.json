@@ -105,7 +105,8 @@
     ],
     "husky": {
         "hooks": {
-            "pre-commit": "node scripts/verify-commit.js"
+            "pre-commit": "node scripts/verify-commit.js",
+            "commit-msg": "node scripts/verify-commit.js"
         }
     },
     "config": {

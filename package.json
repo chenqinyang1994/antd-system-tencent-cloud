@@ -1,0 +1,109 @@
+{
+  "name": "background-system",
+  "version": "1.0.0",
+  "description": "background system of chenqinyang",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
+    "build:ssr": "cross-env NODE_ENV=production webpack --config webpack.ssr.js",
+    "dll": "webpack --config webpack.dll.config.js",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "start": "http-server dist",
+    "st": "node ./src/index.js",
+    "rm": "rimraf ./aaa",
+    "eslint": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenqinyang1994/antd-system-tencent-cloud.git"
+  },
+  "keywords": [
+    "background-system",
+    "antd",
+    "react"
+  ],
+  "author": "892474885@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenqinyang1994/antd-system-tencent-cloud/issues"
+  },
+  "homepage": "https://github.com/chenqinyang1994/antd-system-tencent-cloud#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "add-asset-html-webpack-plugin": "^3.1.3",
+    "autoprefixer": "^9.8.5",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "builder-webpack-geektime": "^1.0.3",
+    "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "image-webpack-loader": "^7.0.1",
+    "less": "^3.11.3",
+    "less-loader": "^6.2.0",
+    "loader-runner": "^4.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-less": "^3.1.4",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "purgecss-webpack-plugin": "^3.0.0",
+    "px2rem-loader": "^0.1.9",
+    "rimraf": "^3.0.2",
+    "speed-measure-webpack-plugin": "^1.3.3",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.8",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.8"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@babel/runtime-corejs3": "^7.10.5",
+    "antd": "^4.6.1",
+    "core-js": "^3.6.5",
+    "lib-flexible": "^0.3.2",
+    "lodash": "^4.17.19",
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-validation-code": "^1.0.8"
+  },
+  "browserslist": [
+    "> 0.2%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "husky": {
+      "hooks": {
+          "commit-msg": "echo $HASKY_GIT_PARAMS"
+      }
+  }
+}

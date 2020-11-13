@@ -103,11 +103,6 @@
         "last 2 versions",
         "not dead"
     ],
-    "husky": {
-        "hooks": {
-            "commit-msg": "validate-commit-msg"
-        }
-    },
     "config": {
         "validate-commit-msg": {
             "types": [

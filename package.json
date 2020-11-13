@@ -108,12 +108,5 @@
             "pre-commit": "node scripts/verify-commit.js",
             "commit-msg": "node scripts/verify-commit.js"
         }
-    },
-    "config": {
-        "validate-commit-msg": {
-            "scope": {
-                "required": true
-            }
-        }
     }
 }

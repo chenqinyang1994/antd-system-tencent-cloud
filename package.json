@@ -103,7 +103,7 @@
   ],
   "husky": {
       "hooks": {
-          "commit-msg": "echo $HASKY_GIT_PARAMS"
+          "commit-msg": "echo 12345 $HASKY_GIT_PARAMS"
       }
   }
 }

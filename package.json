@@ -100,5 +100,10 @@
     "> 0.2%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "husky": {
+      "hooks": {
+          "commit-msg": "echo $HASKY_GIT_PARAMS"
+      }
+  }
 }

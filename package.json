@@ -15,7 +15,7 @@
         "rm": "rimraf ./aaa",
         "eslint": "eslint ./src --fix",
         "commit": "cz",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
     },
     "repository": {
         "type": "git",
@@ -111,7 +111,7 @@
     ],
     "husky": {
         "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS && npm run changelog"
         }
     }
 }
